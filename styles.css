@@ -1,0 +1,67 @@
+@font-face {
+    font-family: Funky;
+    src: url(fonts/Allura-Regular.ttf);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.Container{
+    font-family: Funky;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    font-size: 2.5em;
+    padding: 10px;
+    /* border: 2px solid white; */
+    width: 33em;
+    height: 1em;
+    margin-top: 4em;
+    animation: flicker 2s;
+    animation-iteration-count: 2;
+}
+
+#Full{
+    margin-left: 60px;
+}
+
+#Stack{
+    margin-left: 30px;
+}
+
+#Developer{
+    margin-right: 10px;
+}
+
+@keyframes flicker {
+    25%{opacity: 0;}
+    50%{opacity: 1;}
+    75%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.Name{
+    margin-top: 100px;
+    display: flex;
+    color: white;
+    font-family: Funky;
+    font-size: 3em;
+    /* border: 2px solid white; */
+    justify-content: center;
+    align-items: center;
+    animation: grow 2s;
+}
+
+@keyframes grow {
+    
+    50%{transform: scale(2,2);}
+    
+}
