@@ -13,6 +13,31 @@ body{
     background-size: cover;
 }
 
+header{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    /* border: 2px solid white; */
+    height: 90px;
+}
+
+.Logo img{
+    height: 250px;
+    width: 150px;
+}
+
+.Bar{
+    color: white;
+}
+
+.Bar ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 30px;
+    margin-left: 650px;
+}
+
 .Container{
     font-family: Funky;
     color: white;
@@ -24,7 +49,7 @@ body{
     /* border: 2px solid white; */
     width: 33em;
     height: 1em;
-    margin-top: 4em;
+    margin-top: 2em;
     animation: flicker 2s;
     animation-iteration-count: 2;
 }
